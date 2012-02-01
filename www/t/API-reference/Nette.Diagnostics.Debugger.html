@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.3.0" />
+
+	<title>Class Nette\Diagnostics\Debugger | Nette Framework 2.0beta2 API</title>
+
+	<script type="text/javascript" src="resources/combined.js?3422936598"></script>
+	<script type="text/javascript" src="elementlist.js?3110932891"></script>
+	<script type="text/javascript">
+		var ApiGen = ApiGen || {};
+		ApiGen.options = {"elementDetailsCollapsed":true,"elementsOrder":"natural"};
+	</script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2080973025" />
+	<link rel="search" type="application/opensearchdescription+xml" title="Nette Framework 2.0beta2 API" href="http://api.nette.org/2.0/opensearch.xml" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<div id="groups">
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Nette.html">Nette</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Application.html">Application</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Application.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Config.html">Config</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Config.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Database.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.html">DI</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.DI.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.html">Forms</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Latte.Macros.html">Macros</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Security.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Utils.PhpGenerator.html">PhpGenerator</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="Nette.Diagnostics.Debugger.html">Debugger</a></li>
+				<li><a href="Nette.Diagnostics.FireLogger.html">FireLogger</a></li>
+				<li><a href="Nette.Diagnostics.Logger.html">Logger</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="Nette.Diagnostics.IBarPanel.html">IBarPanel</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form action="http://www.google.com/cse" id="search">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="hidden" name="more" value="api" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Nette.Diagnostics.html" title="Summary of Nette\Diagnostics"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Debugger</h1>
+
+	<div class="description">
+	
+<p>Debugger: displays and logs errors.</p>
+
+<p>Behavior is determined by two factors: mode &amp; output</p>
+
+<ul>
+	<li>modes: production / development</li>
+
+	<li>output: HTML / AJAX / CLI / other (e.g. XML)</li>
+</ul>
+
+	</div>
+
+
+
+
+
+
+
+
+	<div class="info">
+		<b>Final</b><br />
+		
+		<b>Namespace:</b> <a href="namespace-Nette.html">Nette</a>\<a href="namespace-Nette.Diagnostics.html">Diagnostics</a><br />
+
+				<b>Author:</b>
+				David Grudl<br />
+		<b>Located at</b> <a href="source-Diagnostics.Debugger.php.html#18" title="Go to source code">Diagnostics/Debugger.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			
+			final public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-Diagnostics.Debugger.php.html#128" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			
+<p>Static class - cannot be instantiated.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Static class - cannot be instantiated.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="enable" id="_enable">
+
+		<td class="attributes"><code>
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_enable">#</a>
+		<code><a href="source-Diagnostics.Debugger.php.html#191" title="Go to source code">enable</a>( <span>mixed <var>$mode</var> = <span class="php-keyword1">NULL</span></span>, <span>string <var>$logDirectory</var> = <span class="php-keyword1">NULL</span></span>, <span>string <var>$email</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Enables displaying or logging errors and exceptions.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Enables displaying or logging errors and exceptions.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mode</var></dt>
+					<dd><code>mixed</code><br>production, development mode, autodetection or IP address(es) whitelist.</dd>
+					<dt><var>$logDirectory</var></dt>
+					<dd><code>string</code><br>error log directory; enables logging in production mode, FALSE means that
+logging is disabled</dd>
+					<dt><var>$email</var></dt>
+					<dd><code>string</code><br>administrator email; enables email sending in production mode</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isEnabled" id="_isEnabled">
+
+		<td class="attributes"><code>
+			
+			 public static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isEnabled">#</a>
+		<code><a href="source-Diagnostics.Debugger.php.html#264" title="Go to source code">isEnabled</a>( )</code>
+
+		<div class="description short">
+			
+<p>Is Debug enabled?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Is Debug enabled?</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="log" id="_log">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_log">#</a>
+		<code><a href="source-Diagnostics.Debugger.php.html#275" title="Go to source code">log</a>( <span>string|<code><a href="Exception.html">Exception</a></code> <var>$message</var></span>, <span>integer <var>$priority</var> = <code><a href="Nette.Diagnostics.Debugger.html#INFO">Nette\Diagnostics\Debugger::<b>INFO</b></a></code></span> )</code>
+
+		<div class="description short">
+			
+<p>Logs message or exception to file (if not disabled) and sends email
+notification (if enabled).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Logs message or exception to file (if not disabled) and sends email
+notification (if enabled).</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd><code>string|<code><a href="Exception.html">Exception</a></code></code></dd>
+					<dt><var>$priority</var></dt>
+					<dd><code>integer</code><br>one of constant Debugger::INFO, WARNING, ERROR (sends email), CRITICAL (sends
+email)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>logged error filename<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="toStringException" id="_toStringException">
+
+		<td class="attributes"><code>
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_toStringException">#</a>
+		<code><a href="source-Diagnostics.Debugger.php.html#496" title="Go to source code">toStringException</a>( <span><a href="Exception.html">Exception</a> <var>$exception</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Handles exception thrown in __toString().</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Handles exception thrown in __toString().</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$exception</var></dt>
+					<dd><code><code><a href="Exception.html">Exception</a></code></code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="tryError" id="_tryError">
+
+		<td class="attributes"><code>
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_tryError">#</a>
+		<code><a href="source-Diagnostics.Debugger.php.html#512" title="Go to source code">tryError</a>( )</code>
+
+		<div class="description short">
+			
+<p>Starts catching potential errors/warnings.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Starts catching potential errors/warnings.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="catchError" id="_catchError">
+
+		<td class="attributes"><code>
+			
+			 public static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_catchError">#</a>
+		<code><a href="source-Diagnostics.Debugger.php.html#526" title="Go to source code">catchError</a>( <span><code><a href="ErrorException.html">ErrorException</a></code> <var>&amp; $error</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns catched error/warning message.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns catched error/warning message.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$error</var></dt>
+					<dd><code><code><a href="ErrorException.html">ErrorException</a></code></code><br>catched error</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="dump" id="_dump">
+
+		<td class="attributes"><code>
+			
+			 public static
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_dump">#</a>
+		<code><a href="source-Diagnostics.Debugger.php.html#547" title="Go to source code">dump</a>( <span>mixed <var>$var</var></span>, <span>boolean <var>$return</var> = <span class="php-keyword1">FALSE</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Dumps information about a variable in readable format.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Dumps information about a variable in readable format.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$var</var></dt>
+					<dd><code>mixed</code><br>variable to dump</dd>
+					<dt><var>$return</var></dt>
+					<dd><code>boolean</code><br>return output instead of printing it? (bypasses $productionMode)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>variable itself or dump<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="timer" id="_timer">
+
+		<td class="attributes"><code>
+			
+			 public static
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_timer">#</a>
+		<code><a href="source-Diagnostics.Debugger.php.html#596" title="Go to source code">timer</a>( <span>string <var>$name</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Starts/stops stopwatch.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Starts/stops stopwatch.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br>elapsed seconds<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="barDump" id="_barDump">
+
+		<td class="attributes"><code>
+			
+			 public static
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_barDump">#</a>
+		<code><a href="source-Diagnostics.Debugger.php.html#612" title="Go to source code">barDump</a>( <span>mixed <var>$var</var></span>, <span>string <var>$title</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Dumps information about a variable in Nette Debug Bar.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Dumps information about a variable in Nette Debug Bar.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$var</var></dt>
+					<dd><code>mixed</code><br>variable to dump</dd>
+					<dt><var>$title</var></dt>
+					<dd><code>string</code><br>optional title</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>variable itself<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fireLog" id="_fireLog">
+
+		<td class="attributes"><code>
+			
+			 public static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fireLog">#</a>
+		<code><a href="source-Diagnostics.Debugger.php.html#632" title="Go to source code">fireLog</a>( <span>mixed <var>$message</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sends message to FireLogger console.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sends message to FireLogger console.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd><code>mixed</code><br>message to log</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>was successful?<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="DEVELOPMENT" id="DEVELOPMENT">
+
+		<td class="attributes"><code>
+			
+			boolean
+		</code></td>
+		<td class="name"><code>
+				<a href="source-Diagnostics.Debugger.php.html#63" title="Go to source code"><b>DEVELOPMENT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-keyword1">FALSE</span></code></td>
+		<td class="description"><div>
+			<a href="#DEVELOPMENT" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>server modes <code><a href="Nette.Diagnostics.Debugger.html#_enable">Nette\Diagnostics\Debugger::enable()</a></code></p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>server modes <code><a href="Nette.Diagnostics.Debugger.html#_enable">Nette\Diagnostics\Debugger::enable()</a></code></p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PRODUCTION" id="PRODUCTION">
+
+		<td class="attributes"><code>
+			
+			boolean
+		</code></td>
+		<td class="name"><code>
+				<a href="source-Diagnostics.Debugger.php.html#64" title="Go to source code"><b>PRODUCTION</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-keyword1">TRUE</span></code></td>
+		<td class="description"><div>
+			<a href="#PRODUCTION" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>server modes <code><a href="Nette.Diagnostics.Debugger.html#_enable">Nette\Diagnostics\Debugger::enable()</a></code></p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>server modes <code><a href="Nette.Diagnostics.Debugger.html#_enable">Nette\Diagnostics\Debugger::enable()</a></code></p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="DETECT" id="DETECT">
+
+		<td class="attributes"><code>
+			
+			
+		</code></td>
+		<td class="name"><code>
+				<a href="source-Diagnostics.Debugger.php.html#65" title="Go to source code"><b>DETECT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-keyword1">NULL</span></code></td>
+		<td class="description"><div>
+			<a href="#DETECT" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>server modes <code><a href="Nette.Diagnostics.Debugger.html#_enable">Nette\Diagnostics\Debugger::enable()</a></code></p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>server modes <code><a href="Nette.Diagnostics.Debugger.html#_enable">Nette\Diagnostics\Debugger::enable()</a></code></p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="DEBUG" id="DEBUG">
+
+		<td class="attributes"><code>
+			
+			string
+		</code></td>
+		<td class="name"><code>
+				<a href="source-Diagnostics.Debugger.php.html#119" title="Go to source code"><b>DEBUG</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'debug'</span></code></td>
+		<td class="description"><div>
+			<a href="#DEBUG" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p><code><a href="Nette.Diagnostics.Debugger.html#_log">Nette\Diagnostics\Debugger::log()</a></code> and <code><a href="Nette.Diagnostics.Debugger.html#_fireLog">Nette\Diagnostics\Debugger::fireLog()</a></code></p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p><code><a href="Nette.Diagnostics.Debugger.html#_log">Nette\Diagnostics\Debugger::log()</a></code> and <code><a href="Nette.Diagnostics.Debugger.html#_fireLog">Nette\Diagnostics\Debugger::fireLog()</a></code></p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="INFO" id="INFO">
+
+		<td class="attributes"><code>
+			
+			string
+		</code></td>
+		<td class="name"><code>
+				<a href="source-Diagnostics.Debugger.php.html#120" title="Go to source code"><b>INFO</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'info'</span></code></td>
+		<td class="description"><div>
+			<a href="#INFO" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p><code><a href="Nette.Diagnostics.Debugger.html#_log">Nette\Diagnostics\Debugger::log()</a></code> and <code><a href="Nette.Diagnostics.Debugger.html#_fireLog">Nette\Diagnostics\Debugger::fireLog()</a></code></p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p><code><a href="Nette.Diagnostics.Debugger.html#_log">Nette\Diagnostics\Debugger::log()</a></code> and <code><a href="Nette.Diagnostics.Debugger.html#_fireLog">Nette\Diagnostics\Debugger::fireLog()</a></code></p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="WARNING" id="WARNING">
+
+		<td class="attributes"><code>
+			
+			string
+		</code></td>
+		<td class="name"><code>
+				<a href="source-Diagnostics.Debugger.php.html#121" title="Go to source code"><b>WARNING</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'warning'</span></code></td>
+		<td class="description"><div>
+			<a href="#WARNING" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p><code><a href="Nette.Diagnostics.Debugger.html#_log">Nette\Diagnostics\Debugger::log()</a></code> and <code><a href="Nette.Diagnostics.Debugger.html#_fireLog">Nette\Diagnostics\Debugger::fireLog()</a></code></p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p><code><a href="Nette.Diagnostics.Debugger.html#_log">Nette\Diagnostics\Debugger::log()</a></code> and <code><a href="Nette.Diagnostics.Debugger.html#_fireLog">Nette\Diagnostics\Debugger::fireLog()</a></code></p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="ERROR" id="ERROR">
+
+		<td class="attributes"><code>
+			
+			string
+		</code></td>
+		<td class="name"><code>
+				<a href="source-Diagnostics.Debugger.php.html#122" title="Go to source code"><b>ERROR</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'error'</span></code></td>
+		<td class="description"><div>
+			<a href="#ERROR" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p><code><a href="Nette.Diagnostics.Debugger.html#_log">Nette\Diagnostics\Debugger::log()</a></code> and <code><a href="Nette.Diagnostics.Debugger.html#_fireLog">Nette\Diagnostics\Debugger::fireLog()</a></code></p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p><code><a href="Nette.Diagnostics.Debugger.html#_log">Nette\Diagnostics\Debugger::log()</a></code> and <code><a href="Nette.Diagnostics.Debugger.html#_fireLog">Nette\Diagnostics\Debugger::fireLog()</a></code></p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CRITICAL" id="CRITICAL">
+
+		<td class="attributes"><code>
+			
+			string
+		</code></td>
+		<td class="name"><code>
+				<a href="source-Diagnostics.Debugger.php.html#123" title="Go to source code"><b>CRITICAL</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'critical'</span></code></td>
+		<td class="description"><div>
+			<a href="#CRITICAL" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p><code><a href="Nette.Diagnostics.Debugger.html#_log">Nette\Diagnostics\Debugger::log()</a></code> and <code><a href="Nette.Diagnostics.Debugger.html#_fireLog">Nette\Diagnostics\Debugger::fireLog()</a></code></p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p><code><a href="Nette.Diagnostics.Debugger.html#_log">Nette\Diagnostics\Debugger::log()</a></code> and <code><a href="Nette.Diagnostics.Debugger.html#_fireLog">Nette\Diagnostics\Debugger::fireLog()</a></code></p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="productionMode" id="$productionMode">
+
+		<td class="attributes"><code>
+			
+			public static
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#29" title="Go to source code"><var>$productionMode</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$productionMode" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>in production mode is suppressed any debugging output</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>in production mode is suppressed any debugging output</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="consoleMode" id="$consoleMode">
+
+		<td class="attributes"><code>
+			
+			public static
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#32" title="Go to source code"><var>$consoleMode</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$consoleMode" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>in console mode is omitted HTML output</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>in console mode is omitted HTML output</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="time" id="$time">
+
+		<td class="attributes"><code>
+			
+			public static
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#35" title="Go to source code"><var>$time</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$time" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>timestamp with microseconds of the start of the request</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>timestamp with microseconds of the start of the request</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="source" id="$source">
+
+		<td class="attributes"><code>
+			
+			public static
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#41" title="Go to source code"><var>$source</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$source" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>requested URI or command line</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>requested URI or command line</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="editor" id="$editor">
+
+		<td class="attributes"><code>
+			
+			public static
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#44" title="Go to source code"><var>$editor</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'editor://open/?file=%file&amp;line=%line'</span></code></td>
+		<td class="description"><div>
+			<a href="#$editor" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>URL pattern mask to open editor</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>URL pattern mask to open editor</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="browser" id="$browser">
+
+		<td class="attributes"><code>
+			
+			public static
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#47" title="Go to source code"><var>$browser</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$browser" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>command to open browser (use 'start ""' in Windows)</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>command to open browser (use 'start ""' in Windows)</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="maxDepth" id="$maxDepth">
+
+		<td class="attributes"><code>
+			
+			public static
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#52" title="Go to source code"><var>$maxDepth</var></a>
+		</td>
+		<td class="value"><code><span class="php-num">3</span></code></td>
+		<td class="description"><div>
+			<a href="#$maxDepth" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>how many nested levels of array/object properties display <code><a href="Nette.Diagnostics.Debugger.html#_dump">Nette\Diagnostics\Debugger::dump()</a></code></p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>how many nested levels of array/object properties display <code><a href="Nette.Diagnostics.Debugger.html#_dump">Nette\Diagnostics\Debugger::dump()</a></code></p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="maxLen" id="$maxLen">
+
+		<td class="attributes"><code>
+			
+			public static
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#55" title="Go to source code"><var>$maxLen</var></a>
+		</td>
+		<td class="value"><code><span class="php-num">150</span></code></td>
+		<td class="description"><div>
+			<a href="#$maxLen" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>how long strings display <code><a href="Nette.Diagnostics.Debugger.html#_dump">Nette\Diagnostics\Debugger::dump()</a></code></p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>how long strings display <code><a href="Nette.Diagnostics.Debugger.html#_dump">Nette\Diagnostics\Debugger::dump()</a></code></p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="showLocation" id="$showLocation">
+
+		<td class="attributes"><code>
+			
+			public static
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#58" title="Go to source code"><var>$showLocation</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">FALSE</span></code></td>
+		<td class="description"><div>
+			<a href="#$showLocation" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>display location? <code><a href="Nette.Diagnostics.Debugger.html#_dump">Nette\Diagnostics\Debugger::dump()</a></code></p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>display location? <code><a href="Nette.Diagnostics.Debugger.html#_dump">Nette\Diagnostics\Debugger::dump()</a></code></p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="blueScreen" id="$blueScreen">
+
+		<td class="attributes"><code>
+			
+			public static
+			BlueScreen
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#68" title="Go to source code"><var>$blueScreen</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$blueScreen" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="strictMode" id="$strictMode">
+
+		<td class="attributes"><code>
+			
+			public static
+			boolean|integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#71" title="Go to source code"><var>$strictMode</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">FALSE</span></code></td>
+		<td class="description"><div>
+			<a href="#$strictMode" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>determines whether any error will cause immediate death; if integer that it's
+matched against error severity</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>determines whether any error will cause immediate death; if integer that it's
+matched against error severity</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="scream" id="$scream">
+
+		<td class="attributes"><code>
+			
+			public static
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#74" title="Go to source code"><var>$scream</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">FALSE</span></code></td>
+		<td class="description"><div>
+			<a href="#$scream" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>disables the @ (shut-up) operator so that notices and warnings are no longer
+hidden</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>disables the @ (shut-up) operator so that notices and warnings are no longer
+hidden</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="onFatalError" id="$onFatalError">
+
+		<td class="attributes"><code>
+			
+			public static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#77" title="Go to source code"><var>$onFatalError</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$onFatalError" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>of callbacks specifies the functions that are automatically called after
+fatal error</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>of callbacks specifies the functions that are automatically called after
+fatal error</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="logger" id="$logger">
+
+		<td class="attributes"><code>
+			
+			public static
+			<code><a href="Nette.Diagnostics.Logger.html">Nette\Diagnostics\Logger</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#88" title="Go to source code"><var>$logger</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$logger" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="fireLogger" id="$fireLogger">
+
+		<td class="attributes"><code>
+			
+			public static
+			<code><a href="Nette.Diagnostics.FireLogger.html">Nette\Diagnostics\FireLogger</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#91" title="Go to source code"><var>$fireLogger</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$fireLogger" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="logDirectory" id="$logDirectory">
+
+		<td class="attributes"><code>
+			
+			public static
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#94" title="Go to source code"><var>$logDirectory</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$logDirectory" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>name of the directory where errors should be logged; FALSE means that logging
+is disabled</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>name of the directory where errors should be logged; FALSE means that logging
+is disabled</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="email" id="$email">
+
+		<td class="attributes"><code>
+			
+			public static
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#97" title="Go to source code"><var>$email</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$email" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>email to sent error notifications</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>email to sent error notifications</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="bar" id="$bar">
+
+		<td class="attributes"><code>
+			
+			public static
+			Bar
+		</code></td>
+
+		<td class="name">
+				<a href="source-Diagnostics.Debugger.php.html#108" title="Go to source code"><var>$bar</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$bar" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework 2.0beta2 API API documentation generated by <a href="http://apigen.org">ApiGen 2.3.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

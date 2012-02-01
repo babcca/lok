@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.3.0" />
+
+	<title>Class Nette\DI\ContainerBuilder | Nette Framework 2.0beta2 API</title>
+
+	<script type="text/javascript" src="resources/combined.js?3422936598"></script>
+	<script type="text/javascript" src="elementlist.js?3110932891"></script>
+	<script type="text/javascript">
+		var ApiGen = ApiGen || {};
+		ApiGen.options = {"elementDetailsCollapsed":true,"elementsOrder":"natural"};
+	</script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2080973025" />
+	<link rel="search" type="application/opensearchdescription+xml" title="Nette Framework 2.0beta2 API" href="http://api.nette.org/2.0/opensearch.xml" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<div id="groups">
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Nette.html">Nette</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Application.html">Application</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Application.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Config.html">Config</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Config.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Database.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Nette.DI.html">DI</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.DI.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.html">Forms</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Latte.Macros.html">Macros</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Security.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Utils.PhpGenerator.html">PhpGenerator</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="Nette.DI.Container.html">Container</a></li>
+				<li class="active"><a href="Nette.DI.ContainerBuilder.html">ContainerBuilder</a></li>
+				<li><a href="Nette.DI.Helpers.html">Helpers</a></li>
+				<li><a href="Nette.DI.ServiceDefinition.html">ServiceDefinition</a></li>
+				<li><a href="Nette.DI.Statement.html">Statement</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="Nette.DI.IContainer.html">IContainer</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="Nette.DI.MissingServiceException.html">MissingServiceException</a></li>
+				<li><a href="Nette.DI.ServiceCreationException.html">ServiceCreationException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form action="http://www.google.com/cse" id="search">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="hidden" name="more" value="api" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Nette.DI.html" title="Summary of Nette\DI"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ContainerBuilder</h1>
+
+	<div class="description">
+	
+<p>Basic container builder.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="Nette.Object.html">Nette\Object</a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b>Nette\DI\ContainerBuilder</b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Nette.html">Nette</a>\<a href="namespace-Nette.DI.html">DI</a><br />
+
+				<b>Author:</b>
+				David Grudl<br />
+		<b>Located at</b> <a href="source-DI.ContainerBuilder.php.html#22" title="Go to source code">DI/ContainerBuilder.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="addDefinition" id="_addDefinition">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="Nette.DI.ServiceDefinition.html">Nette\DI\ServiceDefinition</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addDefinition">#</a>
+		<code><a href="source-DI.ContainerBuilder.php.html#48" title="Go to source code">addDefinition</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds new service definition. The expressions %param% and @service will be
+expanded.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds new service definition. The expressions %param% and @service will be
+expanded.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.DI.ServiceDefinition.html">Nette\DI\ServiceDefinition</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeDefinition" id="_removeDefinition">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeDefinition">#</a>
+		<code><a href="source-DI.ContainerBuilder.php.html#63" title="Go to source code">removeDefinition</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Removes the specified service definition.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Removes the specified service definition.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDefinition" id="_getDefinition">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="Nette.DI.ServiceDefinition.html">Nette\DI\ServiceDefinition</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDefinition">#</a>
+		<code><a href="source-DI.ContainerBuilder.php.html#75" title="Go to source code">getDefinition</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Gets the service definition.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the service definition.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.DI.ServiceDefinition.html">Nette\DI\ServiceDefinition</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDefinitions" id="_getDefinitions">
+
+		<td class="attributes"><code>
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDefinitions">#</a>
+		<code><a href="source-DI.ContainerBuilder.php.html#90" title="Go to source code">getDefinitions</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets all service definitions.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets all service definitions.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasDefinition" id="_hasDefinition">
+
+		<td class="attributes"><code>
+			
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasDefinition">#</a>
+		<code><a href="source-DI.ContainerBuilder.php.html#101" title="Go to source code">hasDefinition</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Does the service definition exist?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Does the service definition exist?</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getByType" id="_getByType">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getByType">#</a>
+		<code><a href="source-DI.ContainerBuilder.php.html#117" title="Go to source code">getByType</a>( <span>string <var>$class</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Resolves service name by type.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Resolves service name by type.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$class</var></dt>
+					<dd><code>string</code><br>class or interface</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>service name or NULL<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="Nette.DI.ServiceCreationException.html">Nette\DI\ServiceCreationException</a></code></code><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="findByTag" id="_findByTag">
+
+		<td class="attributes"><code>
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_findByTag">#</a>
+		<code><a href="source-DI.ContainerBuilder.php.html#139" title="Go to source code">findByTag</a>( <span>string <var>$tag</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Gets the service objects of the specified tag.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the service objects of the specified tag.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tag</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>of [service name =&gt; tag attributes]<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="autowireArguments" id="_autowireArguments">
+
+		<td class="attributes"><code>
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_autowireArguments">#</a>
+		<code><a href="source-DI.ContainerBuilder.php.html#157" title="Go to source code">autowireArguments</a>( <span> <var>$class</var></span>, <span> <var>$method</var></span>, <span>array <var>$arguments</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Creates a list of arguments using autowiring.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Creates a list of arguments using autowiring.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="prepareClassList" id="_prepareClassList">
+
+		<td class="attributes"><code>
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_prepareClassList">#</a>
+		<code><a href="source-DI.ContainerBuilder.php.html#181" title="Go to source code">prepareClassList</a>( )</code>
+
+		<div class="description short">
+			
+<p>Generates $dependencies, $classes and expands and normalize class names.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generates $dependencies, $classes and expands and normalize class names.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addDependency" id="_addDependency">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="Nette.DI.ContainerBuilder.html">Nette\DI\ContainerBuilder</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addDependency">#</a>
+		<code><a href="source-DI.ContainerBuilder.php.html#285" title="Go to source code">addDependency</a>( <span> <var>$file</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds a file to the list of dependencies.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds a file to the list of dependencies.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.DI.ContainerBuilder.html">Nette\DI\ContainerBuilder</a></code></code><br>provides a fluent interface<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDependencies" id="_getDependencies">
+
+		<td class="attributes"><code>
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDependencies">#</a>
+		<code><a href="source-DI.ContainerBuilder.php.html#297" title="Go to source code">getDependencies</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the list of dependent files.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the list of dependent files.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="generateClass" id="_generateClass">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="Nette.Utils.PhpGenerator.ClassType.html">Nette\Utils\PhpGenerator\ClassType</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_generateClass">#</a>
+		<code><a href="source-DI.ContainerBuilder.php.html#313" title="Go to source code">generateClass</a>( <span> <var>$parentClass</var> = <span class="php-quote">'Nette\DI\Container'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Generates PHP class.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generates PHP class.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.Utils.PhpGenerator.ClassType.html">Nette\Utils\PhpGenerator\ClassType</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="expand" id="_expand">
+
+		<td class="attributes"><code>
+			
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_expand">#</a>
+		<code><a href="source-DI.ContainerBuilder.php.html#510" title="Go to source code">expand</a>( <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Expands %placeholders% in strings (recursive).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Expands %placeholders% in strings (recursive).</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getServiceName" id="_getServiceName">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getServiceName">#</a>
+		<code><a href="source-DI.ContainerBuilder.php.html#552" title="Go to source code">getServiceName</a>( <span>mixed <var>$arg</var></span>, <span> <var>$self</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Converts @service or @\Class -&gt; service name and checks its existence.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Converts @service or @\Class -&gt; service name and checks its existence.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arg</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$self</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>of FALSE, if argument is not service name<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="Nette.Object.html#methods">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+<a href="Nette.Object.html#___call">__call()</a>, 
+<a href="Nette.Object.html#___callStatic">__callStatic()</a>, 
+<a href="Nette.Object.html#___get">__get()</a>, 
+<a href="Nette.Object.html#___isset">__isset()</a>, 
+<a href="Nette.Object.html#___set">__set()</a>, 
+<a href="Nette.Object.html#___unset">__unset()</a>, 
+<a href="Nette.Object.html#_extensionMethod">extensionMethod()</a>, 
+<a href="Nette.Object.html#_getReflection">getReflection()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="CREATED_SERVICE" id="CREATED_SERVICE">
+
+		<td class="attributes"><code>
+			
+			string
+		</code></td>
+		<td class="name"><code>
+				<a href="source-DI.ContainerBuilder.php.html#31" title="Go to source code"><b>CREATED_SERVICE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'self'</span></code></td>
+		<td class="description"><div>
+			<a href="#CREATED_SERVICE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="THIS_CONTAINER" id="THIS_CONTAINER">
+
+		<td class="attributes"><code>
+			
+			string
+		</code></td>
+		<td class="name"><code>
+				<a href="source-DI.ContainerBuilder.php.html#32" title="Go to source code"><b>THIS_CONTAINER</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'container'</span></code></td>
+		<td class="description"><div>
+			<a href="#THIS_CONTAINER" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="parameters" id="$parameters">
+
+		<td class="attributes"><code>
+			
+			public 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-DI.ContainerBuilder.php.html#34" title="Go to source code"><var>$parameters</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$parameters" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>%param% will be expanded</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>%param% will be expanded</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework 2.0beta2 API API documentation generated by <a href="http://apigen.org">ApiGen 2.3.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

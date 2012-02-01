@@ -1,0 +1,500 @@
+2012-01-19 (2926128): Form macro {formContainer}
+2012-01-19 (cec9842): DI\ContainerPanel refactoring
+2012-01-19 (9383ebb): Merge pull request #475 from Vrtak-CZ/feature/dicBar
+2012-01-19 (9868305): Debugger: added $collapses to clickableDump()
+2012-01-19 (90f3deb): DI: add debug bar panel for Container
+2012-01-19 (559a17c): Config\Compiler: added support for code completion in nested services
+2012-01-19 (378d837): ContainerBuilder::sanitizeName fixed bug
+2012-01-19 (b6ead5a): NetteLoader: checks for file existence
+2012-01-19 (d9229b2): Latte: FormMacros stores copy of $form in $_form to avoid accidentally overwriting.
+2012-01-19 (83a8de1): umask(0) called in loader.php [Closes #472]
+2012-01-19 (be353eb): Configurator::$parameters is protected [Closes #473]
+2012-01-18 (418939c): UserPanel: template fix
+2012-01-18 (1676571): Debugger: fixed garbage content when zlib.output_compression is enabled
+2012-01-18 (cf627d3): Merge pull request #471 from tomaswindsor/patch-1
+2012-01-18 (192c284): annotation fix
+2012-01-17 (10e34a2): whitespace
+2012-01-17 (fea7cd6): MemcachedStorage: supports connection pool
+2012-01-17 (8c27bf7): UI\Presenter: InvalidLinkException throwed in canonicalize() is catched
+2012-01-17 (8cbf1b1): UI\Presenter: type mismatch of parameters passed to methods action-, render- and handle- throws BadRequestException or InvalidLinkException instead of silent type juggling
+2012-01-17 (0e6c915): UI\Presenter: non-scalar parameters are not passed to methods action-, render- and handle- if they are not explicitly specified as array type (major BC break!)
+2012-01-17 (32331be): removed Reflection\Method::invokeNamedArgs(), Callback::invokeNamedArgs() and Reflection\Method::getDefaultParameters(); Required functionality moved to PresenterComponentReflection
+2012-01-17 (a93bf97): UI\Presenter: fixed bug when using non-scalar action or signal
+2012-01-17 (603d12b): tests: removed Environment
+2012-01-17 (afbc319): NetteExtension: added factory createCache()
+2012-01-16 (457d8b2): added new tests
+2012-01-16 (29412c1): Database\Connection: supplemental driver loading is case-sensitive now
+2012-01-16 (6251d4e): RobotLoader: does not remove NetteLoader
+2012-01-16 (7bae7c1): Configurator: added createLoader()
+2012-01-16 (2f1eec8): UI\Presenter: adedd error()
+2012-01-16 (534412d): Latte: better XML mode detector
+2012-01-16 (a209f87): NetteExtension: added database configuration
+2012-01-16 (7859da8): NetteExtension: initialize Nette Application panel in Debugger
+2012-01-16 (3748608): NetteExtension: enhanced configuration options
+2012-01-16 (8c88ca3): DI\NestedAccessor: supports calling "create" methods
+2012-01-16 (6f4a4a6): DI\ContainerBuilder: services are sorted alphabetically
+2012-01-16 (ec46c65): DI\ContainerBuilder: fixed self-service reference in formatStatement()
+2012-01-16 (50be378): Debugger bluescreen: every panel can be added only once
+2012-01-16 (fd66cd0): Session::setOptions() added support for camelCase
+2012-01-16 (a2bedb7): PhpGenerator\Helpers: ::? formats as member
+2012-01-16 (904ab90): NetteLoader: Nette\Http\User added to $renamed
+2012-01-15 (fcd7458): NetteLoader: correct directory separators [Closes #468]
+2012-01-15 (ba80a19): Templating\DefaultHelpers renamed to Helpers (BC break!)
+2012-01-15 (c1effbf): NetteLoader: added $renamed for renamed classes
+2012-01-15 (afce066): NetteLoader: uses PSR-0 loader, so class names are case-sensitive on Linux now (this is possible BC break)
+2012-01-14 (41bc15d): missing test
+2012-01-14 (56a80cf): Latte: added support for n:attrs in XML
+2012-01-14 (1535432): Latte: removed dependency on Html::$xhtml
+2012-01-14 (593b976): Latte\Compiler: added setContentType(), some constants CONTEXT_ renamed to CONTENT_
+2012-01-14 (7a07f45): Latte: Parser refactoring
+2012-01-12 (1646490): Latte: added n:input macro to FormMacros
+2012-01-12 (101c321): Latte: MacroNode is linked to HtmlNode for n:attr macros
+2012-01-12 (e5859d6): Latte: separated $attrs and $macroAttrs in HtmlNode
+2012-01-12 (c88d3d9): added Nette\Security\Diagnostics\UserPanel
+2012-01-12 (4607955): Debugger Bar: fixed CSS style for dump() to work under #nette-debug
+2012-01-12 (83bec20): Latte: macro {syntax} behaves as unpaired [Closes #353]
+2012-01-12 (455e54e): DateTime: added __toString() & modifyClone()
+2012-01-12 (012ac8d): Merge pull request #463 from pavelbier/patch-1
+2012-01-12 (2dd5e3a): Call to undefined method NUserStorage::onLoggedOut()
+2012-01-12 (c006db1): Latte: curly brackets are allowed inside macro [Closes #161]
+2012-01-12 (83f1533): typos
+2012-01-12 (de7963e): Latte: refactored CONTEXT_ constants in Compiler
+2012-01-12 (17fd23d): Latte: lines to ParseException are added only automatically
+2012-01-12 (e3deb6f): Latte: Parser divided into Parser and Compiler, added class Token
+2012-01-12 (72cdbef): Latte\Parser is renamed to Compiler (this is preparation for the division into two parts) (BC break!)
+2012-01-12 (863dab2): RobotLoader: compatibility with parsing scripts written in newer version of PHP
+2012-01-12 (e5dc954): added Database\Helpers, refactoring
+2012-01-11 (110cb86): typos
+2012-01-11 (1427870): User: added the possibility to log in using the IIdentity
+2012-01-11 (72ccd54): PHP 5.4 compatibility
+2012-01-11 (900120e): IUserStorage: changed interface
+2012-01-11 (2ae2e46): User: deprecated setNamespace() & getNamespace()
+2012-01-11 (7066565): User & IUserStorage moved to Nette\Security; IUser removed (BC break!)
+2012-01-11 (07c2aaa): User: The session storage management was decoupled from User to separate UserStorage class. It allows to define own different User class without need of copying or again-coding all the needed sessions stuff. [Closes #208]
+2012-01-11 (cf92fb0): User::getRoles returns authenticatedRole if authentizator returns no roles
+2012-01-11 (f3fd4c6): SafeStream: support for "c" mode [Closes #454]
+2012-01-10 (323f2ef): Merge pull request #461 from hrach/f-driver-reflection
+2012-01-10 (0bf362c): Merge pull request #457 from hrach/h-database-isset
+2012-01-10 (4c7546c): Merge pull request #460 from HosipLan/bug/tags-only-for-shared-services
+2012-01-10 (2b96d59): Merge pull request #455 from tomaswindsor/master
+2012-01-10 (9abd76e): Merge pull request #456 from bojovyletoun/reverse
+2012-01-10 (64c7e91): Database: reflection reload cache
+2012-01-10 (f6d3b1c): Database\Reflection\DiscoveredReflection: uses driver reflection
+2012-01-10 (170193a): Database: MySQL driver - implemented getForeignKeys()
+2012-01-10 (e7b7489): Database: implemented primary into getColumns()
+2012-01-10 (752ea65): ContainerBuilder: findByTag now intentionally ignores non-shared services
+2012-01-10 (e06f442): Database: fixed isset() call on ActiveRow
+2012-01-10 (14c3c89): String::reverse() added test.
+2012-01-10 (8dc32af): Strings::reverse added. uses UTF-32[L/B]E
+2012-01-10 (74fa1d0): annotation description fixes
+2012-01-09 (99ef7a5): Forms\SelectBox: fixes using two or more spaces in option key
+2012-01-09 (a2a91bb): Config\Compiler: added auto-generated "{factory}Factory" services (experimental)
+2012-01-09 (724ce43): Config\Compiler: using service and factory with the same name throws exception
+2012-01-09 (1e06daa): DI\ContainerBuilder: $meta is generated only for shared services
+2012-01-09 (6357be7): Merge pull request #453 from vojtech-dobes/robot-loader-register-fluent
+2012-01-09 (cbfd32d): RobotLoader::register() provides a fluent interface
+2012-01-09 (1e7e537): Latte: used escapeICal() with {contentType text/calendar} [Closes #447] (thx Werkov)
+2012-01-09 (825195a): typos, phpDoc
+2012-01-09 (8892d88): Configurator: works correctly with empty tempDir
+2012-01-09 (c0c3e3b): Latte: refactoring, improperly used public properties replaced with setters/getters
+2012-01-09 (a18040d): Database: SqlLiteral is immutable object
+2012-01-09 (fe9f3b4): Database: refactoring, improperly used public properties replaced with setters/getters
+2012-01-09 (9f87786): UI\PresenterComponent: fixed missing reference between persistent property and parameters array (second try)
+2012-01-09 (f4fb93d): Template: removed $warnOnUndefined (BC break!)
+2012-01-09 (98c01ea): Database\Drivers: $supports replaced with method isSupported()
+2012-01-09 (28982bf): tests: removed TestErrorException, errors fails immediately
+2012-01-09 (2bb600c): tests: added Assert::error
+2012-01-06 (20703ea): Merge pull request #451 from Vrtak-CZ/feature/sysContainerTypeHint
+2012-01-06 (fe68633): Presenter: better typehint for context
+2012-01-06 (b028057): UI\PresenterComponent: fixed missing reference between persistent property and parameters array.
+2012-01-06 (2c1d38c): Config: getContainer() renamed to getContainerBuilder() (BC break!) [Closes #450]
+2012-01-06 (8ac02f6): Application: $allowedMethods is deprecated
+2012-01-04 (fd97fd4): Some other methods provides a fluent interface
+2012-01-03 (e0156fa): typos
+2012-01-03 (ca8b0f0): Http\RequestFactory: scriptPath/baseUrl is detected using longest common substring
+2012-01-02 (479b6a0): DI\ContainerBuilder: added support for PHP literals in service setup using "?"
+2012-01-02 (031d3f6): DI\CompilerExtension: added loadFromFile() helper method
+2012-01-02 (94d9938): DI\CompilerExtension: changed API, removed $container and $config parameters from loadConfiguration(), beforeCompile() and afterCompile() (BC break!)
+2012-01-02 (d04fb7f): DI: getByClass() renamed to getByType() (BC break!)
+2012-01-02 (1841c63): Merge pull request #442 from tomaswindsor/patch-3
+2012-01-02 (bba3c4f): Updated copyright notices for 2012. Oh yeah, it's so much useless commit. But Mayans claim this is the last one.
+2012-01-02 (d1aea5f): UI\Presenter::getContext() is not deprecated
+2012-01-02 (4750526): DI\ContainerBuilder: fixed usage of ServiceDefinition object as statement
+2011-12-30 (220f591): Better 'flatten' method description.
+2011-12-30 (1698a27): Merge pull request #441 from hrach/f-array-flatten
+2011-12-30 (8591f08): Arrays: added flatten() method
+2011-12-30 (d482ed5): Latte: fix order of epilogs [Closes #438]
+2011-12-30 (c21d495): build tools fix
+2011-12-27 (6a0ab53): Merge pull request #435 from hrach/h-database-ref
+2011-12-27 (eed3b1c): Merge pull request #436 from hrach/f-database-related
+2011-12-27 (797fd2c): Merge pull request #437 from Majkl578/robotloader-traits
+2011-12-28 (48419e1): RobotLoader now supports traits
+2011-12-23 (64b4d6b): Database: implemented short related call related('table.column')
+2011-12-23 (b704810): Database: fixed ref() caching
+2011-12-23 (ba290ac): Nette Test: better PHP dumping
+2011-12-23 (fc0763c): RobotLoader: implemented experimental retry-limit for cache miss
+2011-12-23 (a1b5427): Nette\Database: added reflection support in drivers
+2011-12-23 (7e3960a): PhpExtension, ConstantsExtension: refactoring
+2011-12-23 (1271e6b): Config\CompileExtension::getConfig() merges configuration with default values and performs %parameters% expansion
+2011-12-23 (438f3ef): PhpExtension: removed back compatibility support for non-flatten PHP section in INI configuration file; will throw Configuration value for directive ... is not scalar. (BC break!)
+2011-12-23 (1be1a32): DI\ServiceDefinition: non-shared services are not auto-wired by default
+2011-12-23 (6c2a8e6): Config\Compiler: added support for nested 'services' and 'factories' (experimental)
+2011-12-23 (994dc66): DI\ContainerBuilder: added support for "anonymous" services using keyword 'self'
+2011-12-23 (8d8242e): DI\ContainerBuilder: added operator 'not'
+2011-12-23 (1cb6ce6): DI\ContainerBuilder: prepends namespace to "relative" class name obtained from the annotation @return
+2011-12-23 (7c17079): PhpGenerator: added Helpers::isIdentifier() and Method::setBody()
+2011-12-23 (6febab8): Database\Connection: removed 5th constructor argument $databaseReflection, use setDatabaseReflection (BC break!)
+2011-12-23 (afa3a77): Database: returned deprecated through() method for BC
+2011-12-23 (d940d03): Database: fixed insertion test
+2011-12-23 (dc1fa11): Config: fixed overriding service definition class from config [Closes #432]
+2011-12-23 (7d0606a): DI\ContainerBuilder: autowired: off really disables autowiring, removed prefered vs. nonprefered services
+2011-12-23 (6e8156b): DI\ContainerBuilder: @\Service must not be used in factory without specified class
+2011-12-21 (e6d2176): Merge pull request #93 from JanTvrdik/i93-isControlInvalid
+2011-12-21 (e2efcce): Merge pull request #424 from hrach/f-database-reflection-backjoin
+2011-12-21 (f468eeb): DI\ContainerBuilder: added test + fix for @\Service
+2011-12-21 (115f919): Config\CompilerExtension: added setCompiler(), getConfig() and prefix()
+2011-12-21 (0ec1d54): Debugger bluescreen: source code viewport adjust, more lines are on top
+2011-12-21 (777385c): DI\ContainerBuilder: support for aliasing (commited with a heavy conscience)
+2011-12-21 (e1d8c53): DI\ContainerBuilder: supported service references by class @\Class
+2011-12-21 (14a5f41): DI\ServiceDefinition: refactoring to resolveClass() for better recursive service class resolution
+2011-12-21 (db6539a): DI\ServiceDefinition: pair class <-> factory are processed in ContainerBuilder::prepareClassList()
+2011-12-21 (aa28498): Config\Compiler: fixed short syntax, supported keyword 'self'
+2011-12-20 (57e5dca): Merge pull request #429 from Vrtak-CZ/patch-1
+2011-12-20 (8ff213d): Configurator: SystemContainer class name and parent class name are stored in parameters
+2011-12-20 (5ffcea3): typos
+2011-12-20 (81fd4f2): BlueScreen: fix bottom panels double render
+2011-12-20 (a2ef2b9): Configurator::setCacheDirectory() renamed to setTempDirectory() because sets %tempDir% (BC break!) [Closes #426]
+2011-12-20 (7b42e22): Environment: improved compatibility with new Configurator, but removed setConfigurator(() and getConfigurator() (BC break!)
+2011-12-20 (d1ce90f): Configurator: buildContainer() refactoring
+2011-12-20 (e011024): Configurator: use addConfig(..) & createContainer() instead of loadConfig() or getContainer() (BC break!)
+2011-12-20 (2301e31): User, Presenter, Environment: services are searched by class instead of by name
+2011-12-20 (1956b17): User: refactoring, added parameter Nette\Http\Session to constructor
+2011-12-20 (ffe2f0d): DI\Container::findByClass() renamed to getByClass() and throws an exception if service is not found (via parameter $need)
+2011-12-20 (51838d0): Database: useful error constant for MySqlDriver
+2011-12-19 (a6646b2): Environment: constant TEMP_DIR is mandatory (BC break)
+2011-12-19 (36e4dcb): Config\NetteExtension: fixed session configuration
+2011-12-19 (fa2cfdb): Config\Compiler: short syntax (service: foo) supports factories and entites
+2011-12-19 (325620c): DI\ContainerBuilder: fixed compatibility with deprecated $params
+2011-12-19 (6418ea0): Configurator: added isProductionMode()
+2011-12-19 (86596a7): Route: eliminated BC break from commit 6987015a92 - strict behavior can be enabled by flag FILTER_STRICT
+2011-12-19 (5f9a6b6): added missing umask()
+2011-12-19 (e1b66b2): RobotLoader: cache usage refactoring
+2011-12-19 (46e3b9d): Cache::load($key, $fallback) - added argument $fallback meaning "load or save"
+2011-12-19 (c68271d): Cache::save() refactoring
+2011-12-19 (63a6aee): Caching: implemented lock() in FileStorage (much more efficient than CriticalSection)
+2011-12-19 (a17e890): Caching: added method lock() to IStorage (BC break for storage developers!)
+2011-12-19 (f3b5e0c): removed Nette\Utils\CriticalSection
+2011-12-19 (de1cc2c): Nette test: displays log file, php command and fatal errors
+2011-12-18 (af7d18e): Database: typo & changed cache section
+2011-12-18 (7a9dde3): Database: moved through() to related() (BC BREAK!)
+2011-12-18 (1291c05): Database\Reflection: completly refactored, added support for ref($table, $throughColumn)
+2011-12-18 (e833c11): Removed interface IPartiallyRenderable. (BC break)
+2011-12-18 (7db5f59): Configurator: removed detection of section 'console' (BC break! - this section must be specified manually)
+2011-12-18 (a7f0db6): BlueScreen: add support for bottom panels [Closes #323] [Closes #362]
+2011-12-18 (36b3286): Deprecated Control::getWidget() and {widget ...} (BC break)
+2011-12-18 (64272d4): Database: fixed back joining over aggregation function
+2011-12-18 (9d92863): Database: removed obsolete substitutions (BC break)
+2011-12-18 (e7aa43a): Database: implemented backjoin
+2011-12-18 (9ceddc8): updated phpDoc
+2011-12-18 (9a5f135): Reflection\ClassType::is($type) added
+2011-12-17 (e283d78): Database\Statement: changed \DateTime to Nette\DateTime
+2011-12-17 (d3cdd0a): Debugger: removed spaces from generated file name
+2011-12-17 (d6a8ae6): DI\Compiler: small fixes in definitions, added tests
+2011-12-17 (2141357): DI\ContainerBuilder: class name is normalized
+2011-12-17 (4837705): Configurator: changed cache folder back to %tempDir%/cache to avoid disaster
+2011-12-17 (4a88cb3): Configurator, Environment: default tempDir is set only by Environment, partially revers commit 9fe0100fb30de5ab45e09a806164a0cebb1d185b.
+2011-12-17 (699e4d8): Images: ENLARGE for back compatibility, SHRINK -> SHRINK_ONLY
+2011-12-15 (05f5d48): Control: isControlInvalid() checks children of classes not implementing IRenderable [Closes #93]
+2011-12-15 (e8b4b30): Presenter & PresenterFactory: calls constructor and setContext() using auto-wiring (very experimental)
+2011-12-15 (0600d73): CriticalSection: lockfile is placed to system temporary directory (yeah!)
+2011-12-15 (9fe0100): Configurator: 'tempDir' is mandatory now and is detected
+2011-12-15 (0899092): Latte UIMacros: copies of $control & $presenter stored in $_control & $_presenter to avoid accidentally overwriting.
+2011-12-15 (27435fa): Session: session ID is regenerated every 30 minutes to prevent Session Hijacking and Fixation
+2011-12-15 (bc5a075): Database\Statement: added Date(Time) type detection
+2011-12-15 (7447a28): DI\ContainerBuilder: added ability to specify services as object ServiceDefinition or ContainerBuilder
+2011-12-15 (9c95fe6): DI\ContainerBuilder: refactoring
+2011-12-15 (f4ff8df): DI\ContainerBuilder: escape() moved to Helpers
+2011-12-14 (ac23564): Config\Compiler: disabled support for "own" sections in configuration file. Move them under section "parameters". (BC break!)
+2011-12-14 (1fce6a6): whitespace
+2011-12-14 (977009d): Config\Compiler: refactoring, added $reserved
+2011-12-14 (dac43a5): Configurator::setProductionMode() added
+2011-12-14 (e2e2d8f): RobotLoader: better detection of renamed files
+2011-12-14 (9987bda): RobotLoader: faster on production mode
+2011-12-14 (6ae3334): LimitedScope::load allows load script once [Closes #321]
+2011-12-14 (74b3870): Database\Reflection\DiscoveredReflection: fixed bugs in caching, refactoring
+2011-12-14 (c87fa3a): Permission: added getRoles() and getResource()
+2011-12-14 (cea3d50): UI\Presenter: current flag is determined using case-insensitive action name comparing [Closes #85]
+2011-12-14 (c3685fd): Debugger: <doctype> is placed before reseting sequence [Closes #314]
+2011-12-14 (d7391b8): Mail: fixed Content-Disposition header encoding [Closes #325]
+2011-12-14 (608678b): Debugger: Fewer unnecessary words in the error log. [Closes #351]
+2011-12-14 (c5105e3): Debugger: dump() correctly decodes quotes in console [Closes #337]
+2011-12-14 (9ec1036): Debugger: add Debugger::$browser for open console errors in browser
+2011-12-14 (1fea607): Debugger: fixed bug in returned filename from log()
+2011-12-14 (e4b0618): Debugger: fixed clickableDump() not to cover multiple lines with links
+2011-12-14 (febd175): Database\Table\Selection: table names delimited using tryDelimite() [Closes #339]
+2011-12-14 (0fa2afe): RoutingPanel: fixed module name
+2011-12-13 (95f73fa): Merge pull request #360 from xpavp03/patch-1
+2011-12-14 (d92aa06): Statement: better type detection [Closes #382]
+2011-12-14 (8bbc374): Database test updated
+2011-12-14 (d1cd7c4): Database\Table\Selection: improved tryDelimite() [Closes #388]
+2011-12-14 (84e3b4d): Debugger: path to exception dump is sent in AJAX response header X-Nette-Error-Log
+2011-12-14 (5729fdb): Debugger: exception dumped in consoleMode and debugscreen path is echoed
+2011-12-14 (fc7dcf6): Debugger: log() returns path where exception was stored
+2011-12-14 (63385e1): Latte: support for {else} in {if} with condition in closing tag
+2011-12-13 (b18a209): Latte: fixed %node.word is not "reentrant" for closing macro tag [Closes #373]
+2011-12-13 (0726aff): Tokenizer: added reset()
+2011-12-13 (6ee5c5d): Caching\Storages\MemcachedStorage: added $timeout [Closes #369]
+2011-12-13 (1418733): Latte: fixed doubled spaces in n:class
+2011-12-13 (3d88c52): Latte: allowed omitting of quotes in braces (item) -> ('item')
+2011-12-13 (5d8f182): Latte: fixed simplified array syntax & uppercase identifier [Closes #396]
+2011-12-13 (b126996): typo
+2011-12-13 (91b8a7e): Database\Diagnostics\ConnectionPanel::$maxLength = 0 do not shorten SQL queries [Closes #257]
+2011-12-13 (0268c04): Configurator, Debugger: development mode is detected only for loopback 127.0.0.1 and ::1 (experimental) [Closes #401]
+2011-12-13 (b1c601a): Configurator: fixed missing $file in checkCompatibility
+2011-12-13 (f1f417b): Revert "Database\Statement: added Date(Time) type detection"
+2011-12-13 (a941008): Nette\Forms\Controls\MultiSelectBox: added support for validation of rule Form::COUNT for count of selected items (JS validation works well, no changes needed)
+2011-12-13 (61fdb8e): DI\Container: added callMethod()
+2011-12-13 (c5616fb): Mail: used Validators as email validator
+2011-12-13 (cd06232): Validators::assert() puts given string in exception message
+2011-12-13 (6c643ca): Latte: {cache} macro supports key 'expiration'
+2011-12-13 (b02b6bc): Image: added new flag EXACT for resize()
+2011-12-13 (a2e5d52): Image: shrinking is not default resizing mode (BC break!) removed flag ENLARGE, added flag SHRINK
+2011-12-13 (cafca5b): typos
+2011-12-13 (a8e473d): Config\Config split to Config\Loader and Config\Helpers (BC break)
+2011-12-12 (2d38c1a): Application::$onResponse is called only "on" response
+2011-12-12 (f354635): DI\Helpers::expand() fixed recursive expanding (thx tomaswindsor)
+2011-12-12 (e016e0f): Merge pull request #380 from paranoiq/patch-2
+2011-12-12 (f4a58f2): Merge pull request #385 from tomaswindsor/patch-1
+2011-12-12 (0b68151): Merge pull request #409 from bojovyletoun/patch-3
+2011-12-12 (863dcf3): Strings::substring doesn't work with length = NULL
+2011-12-12 (2a908d5): unreachable condition $response instanceof \SplFileInfo --> $response[0] instanceof \SplFileInfo
+2011-12-12 (499ecd3): Merge pull request #397 from hrach/patch-1
+2011-12-12 (8b158e7): Merge pull request #394 from Majkl578/f-54-magic-quotes-off
+2011-12-12 (b5ccb8d): Merge pull request #395 from paranoiq/patch-5
+2011-12-12 (d41fa3d): Merge pull request #389 from pepakriz/master
+2011-12-12 (f0d0bea): Database tests: added explanatory comments
+2011-12-12 (0d69709): Database test: files renamed
+2011-12-12 (1052527): Database test: sample database modified to be about books instead of (confusing) application
+2011-12-12 (2ba6208): Database\GroupedSelection: implemented multi-insert
+2011-12-12 (548c611): Database\SqlPreprocessor: changes syntax for multi-insert (BC break!) [Closes #279]
+2011-12-12 (c0971f9): Database\SqlPreprocessor: allowed to pass ActiveRow as column value
+2011-12-12 (695f39f): Database: updated & added tests
+2011-12-12 (1b72d48): typo & phpdoc
+2011-12-12 (6e86cd5): Database\Selection: fixed bug in caching referenced rows
+2011-12-12 (401f609): Database\ActiveRow: added getPrimary() method
+2011-12-12 (275ecdd): Database: fixed grouped deleting/updating [closes #331]
+2011-12-12 (f91f151): Database\Statement: added Date(Time) type detection
+2011-12-12 (e82d11d): Database\Connection: added setDatabaseReflection() method
+2011-12-12 (a5aaad6): DI\ContainerBuilder: $parameters are set in constructor [Closes #405]
+2011-12-12 (bf11a13): Config: checks for misplaced section 'includes' [Closes #406]
+2011-12-12 (3f853aa): Config: better error messages using Validators
+2011-12-12 (7ceab33): Validators::assertField() - improved error messages
+2011-12-12 (b1abdf4): DI\Helpers::autowireArguments - fixed Cannot determine default value for internal functions [Closes #408]
+2011-12-09 (3991ebe): DI\ContainerBuilder: bugfix
+2011-12-09 (e318f79): DI\ContainerBuilder: added support internal factories (i.e. non-shared services)
+2011-12-09 (4335ad2): DI\ContainerBuilder: added support for factories (i.e. non-shared services)
+2011-12-09 (5ee3af3): DI\ContainerBuilder: refactoring, getServiceName
+2011-12-08 (6c7ba4b): Config\Compiler: supports NeonEntity entity in service definition (setup), removed support for associative arrays
+2011-12-08 (1db8fc6): Config\Compiler: supports NeonEntity in service definition (class & factory)
+2011-12-08 (987d270): added Nette\DI\Statement
+2011-12-08 (94585b5): DI\ServiceDefinition: removed setArguments(), arguments are passed as second parameter in setClass or setFactory (BC break!)
+2011-12-08 (0d680bf): DI\ContainerBuilder: refactoring, formatStatement()
+2011-12-08 (b8da292): DI\ContainerBuilder: changed syntax for global function calling
+2011-12-08 (1a14682): Neon: literal may starts with ':'
+2011-12-07 (05fae15): Neon: added new tests
+2011-12-07 (09f3156): Neon: character `(` has special meaning in non-quotes literals, creates NeonEntity object
+2011-12-07 (8905417): Neon: char `@` has no longer special meaning
+2011-12-07 (58215b8): typos, fixes
+2011-12-06 (84fba77): added ContainerBuilder::addDependency()
+2011-12-06 (33a7bc0): Configurator: method buildContainer() refactored to new class Compiler
+2011-12-06 (a3af714): Configurator: split in extensions (added CompilerExtension)
+2011-12-05 (374d94e): Configurator: fixed bugs in core services definition
+2011-12-05 (2b44157): Configurator: correct parameters expanding/escaping
+2011-12-05 (6dbb290): Configurator: uses addBody() instead of formatPhp or formatCall
+2011-12-05 (d90670b): added tests for Nette\Config
+2011-12-05 (b2d39ba): added DI\Container::createInstance() (experimental)
+2011-12-05 (f0c6ada): DI\ContainerBuilder: createService<Name> methods are protected
+2011-12-05 (947a1d0): DI\ContainerBuilder: added default self::THIS_CONTAINER service
+2011-12-05 (5a81ac8): DI\Helpers::autowireArguments() moved from DI\ContainerBuilder
+2011-12-05 (1a3690c): DI\ContainerBuilder: removed support for run-time parameters expansion. All parameters are expanded during compile-time.
+2011-12-05 (26d054c): DI\Container: parameters can be (and probably should be) passed to constructor
+2011-12-05 (d3fb523): DI\Helpers::expand() accepts arrays
+2011-12-05 (a68b99c): Nette\Utils\Strings::expand() and Configurator::preExpand() moved to DI\Helpers
+2011-12-05 (7d6ce7c): added Configurator::getDefaultParameters()
+2011-12-05 (507ccf8): added DI\ContainerBuilder::getDefinitions()
+2011-12-05 (2cfbf30): added Nette\Utils\PhpGenerator\Method::addBody()
+2011-12-05 (1716c88): DI\ContainerBuilder: autowiring do not pass NULL if argument is missing
+2011-12-05 (d8540b8): Configurator: parameter appDir is guessed from backtrace (experimental)
+2011-11-29 (a58b0f7): Configurator: removed parameters magically created the constants WWW_DIR, APP_DIR etc.
+2011-11-29 (209b5db): Configurator: enhanced config syntax
+2011-11-29 (2a76877): DI\ContainerBuilder: fix in autowiring
+2011-11-29 (51171f0): Arrays::isList and TextBase validators moved to Validators
+2011-11-29 (940b92d): added Nette\Utils\Validator
+2011-11-28 (0c43fd1): Nette\Environment and Container: improved coexistence in friendship and peace
+2011-11-28 (94f4d73): Presenter: fix, $invalidLinkMode is set in presenter
+2011-11-28 (79624eb): typos, fixes
+2011-11-28 (67242d4): DI\ContainerBuilder: added getDependencies()
+2011-11-28 (308a36c): DI\ContainerBuilder: typos, fixed PHP 5.2 version
+2011-11-28 (0bcc836): Updated @property in phpDoc comments
+2011-11-28 (a067eeb): Cache: added array_unique for dependencies
+2011-11-28 (a047b87): replaced self:: with static:: where it makes sense.
+2011-11-28 (88b95d5): Configurator: supported extending (inheritance) of services
+2011-11-28 (f3539cc): Configurator: added addParameters()
+2011-11-28 (25dc526): Configurator: all system services provided as ServiceDefinition
+2011-11-28 (19fd245): Configurator: refactoring, added configureCore(), configurePhp() & configureConstants()
+2011-11-28 (ac37230): Configurator: refactoring, container is not created in the constructor, but later in loadConfig() or getContainer(). So make sure you did not call getContainer() before loadConfig()
+2011-11-28 (baf635f): Config: added tools takeParent(), isOverwriting() and isInheriting()
+2011-11-27 (9f3d963): DI\ContainerBuilder: added removeDefinition(), getDefinition() and hasDefinition()
+2011-11-27 (f343d1d): Configurator: session is no more started in $application->onStartup
+2011-11-27 (d58be6e): Application: $context replaced with individual services
+2011-11-27 (19fa06f): Presenter::$invalidLinkMode is non-static and set by PresenterFactory (BC break!)
+2011-11-23 (21461fa): Configurator: removed $defaultConfigFile
+2011-11-23 (0842450): typos
+2011-11-23 (1cbb85b): DI\ServiceDefinition: setClass() and setFactory() can specify arguments
+2011-11-22 (8992df7): Nette\Configurator renamed to Nette\Config\Configurator (old class exists for back-compatibility)
+2011-11-22 (9447f37): DI\Container: added services meta info and findByTag()
+2011-11-22 (d7db259): DI\Container: added findByClass() for run-time autowiring
+2011-11-22 (24c038b): DI\Container: added isCreated()
+2011-11-22 (c5efaab): Nette\Config: rewritten (BC break) and supports including external configuration files
+2011-11-22 (08febbb): DI\ContainerBuilder: creates static container instead of dynamic
+2011-11-22 (f5061ff): DI\ContainerBuilder: uses annotation @return
+2011-11-22 (08d6b7e): Configurator: added createRobotLoader() for usage in bootstrap.php
+2011-11-22 (65558e9): DI\ContainerBuilder: refactoring of class and PHP code generating routines
+2011-11-22 (27878f1): DI\ServiceDefinition::addCall() changed to more universal addSetup()
+2011-11-22 (8451091): DI\ContainerBuilder: refactoring of addDefinition()
+2011-11-22 (18ebe14): DI\ContainerBuilder: added $parameters
+2011-11-22 (3fca32c): fixed Environement tests
+2011-11-22 (09c0bb3): PhpGenerator\Helpers: added createObject() (experimental)
+2011-11-22 (bf8b2fd): PhpGenerator\Helpers: added format() & formatArgs()
+2011-11-22 (ccf267f): PhpGenerator: whitespace fix
+2011-11-21 (d9e9db7): Neon::decode() checks for duplicated keys
+2011-11-21 (1fb687e): Nette\Utils\Arrays: added isList()
+2011-11-21 (8077cca): Assert::throws message is optional
+2011-11-21 (c02a747): typos
+2011-11-20 (363413a): Forms: fixed adding validation message as HTML instance
+2011-11-18 (68fed81): Session: bugfix - session won't open when closed and opened again
+2011-11-15 (6ad6e4d): Revert "Fixed compatibility with PHP 5.4 (get_magic_quotes_gpc now raises E_DEPRECATED)" This reverts commit 5f092ee416caa980d4c7c18e347e2bad289bddf8.
+2011-10-30 (1d090ff): Configurator: sections variable, variables, mode, const and option are deprecated and forbidden. Use parameters, constants and arguments instead. (BC break!)
+2011-10-30 (9abe2a5): Unified naming convention accross framework: "params" has been renamed to "parameters" (BC break)
+2011-10-28 (df07cd9): Neon::encode: fixed encoding of empty array
+2011-10-25 (b2b5a1c): DI\ContainerBuilder: default factory argument is provided by Configurator
+2011-10-25 (05d30c3): DI\ContainerBuilders: allows to call any callback on service, not only services' methods
+2011-10-25 (054ed8c): DI\ContainerBuilder: (fix) factory method can be global function
+2011-10-25 (4f3a12b): DI\ContainerBuilder: allows using currently created service inside the factory; appends @self pseudo-service
+2011-10-25 (c9a20b1): DI\ServiceDefinition::addMethodCall() changed to more universal addCall()
+2011-10-25 (a388f0e): DI\ContainerBuilder: added @container pseudo-service
+2011-10-25 (7da2b6d): Nette\Utils\PhpGenerator used in ContainerBuilder & Configurator
+2011-10-25 (2ef6f82): added Nette\Utils\PhpGenerator
+2011-10-25 (e09b4d1): fixed test
+2011-10-25 (81d03b7): added Nette\ObjectMixin::callProperty convention style
+2011-10-22 (cab17fb): $defaultFlags is int, not bool
+2011-10-12 (e2bcd6c): added Form::isSuccess()
+2011-10-12 (32838ab): ConnectionPanel: skip unwanted items in backtrace
+2011-10-12 (1f15131): Merge pull request #379 from paranoiq/patch-1
+2011-10-12 (9862c77): Connection: new keywords in highlightSql()
+2011-10-12 (03c2e5c): DI\ContainerBuilder: added type-checking in generated factories
+2011-10-12 (b2fca4f): DI\ContainerBuilder: implemented support automatic for auto-wiring
+2011-10-12 (3b699eb): DI\ContainerBuilder: heavy refactoring; addDefinition() returns ServiceDefinition object
+2011-10-12 (bcdb5c9): added DI\ServiceDefinition
+2011-10-12 (cd53d8d): DI\Container: static services can be overwritten
+2011-10-12 (1c8498b): DI\IServiceBuilder, ServiceBuilder: removed
+2011-10-12 (127ae65): DI\Container: removed support for tags
+2011-10-11 (31bb3ca): DI\Container: removed getServiceByType() and checkServiceType()
+2011-10-11 (8a3182e): added Nette\Reflection\Parameter::__toString()
+2011-10-10 (c0bd42a): typo
+2011-10-07 (419443f): Merge pull request #375 from pepakriz/patch-1
+2011-10-07 (9e528fb): typos
+2011-10-06 (938e082): Merge pull request #376 from hrach/f-database-reflection
+2011-10-07 (f1a7366): Cache: internal cache is used only by offsetGet() [Closes #340]
+2011-10-07 (2017554): Cache: added remove()
+2011-10-07 (669624c): added Nette\Application\UI\Multiplier
+2011-10-06 (d91e901): Database: added tests for DiscoveredReflection
+2011-10-06 (463b337): Database: implemented DiscoveredReflection
+2011-10-06 (8861839): Database: refactored reflection to IReflection
+2011-10-06 (759890f): Databse: DatabaseReflection renamed
+2011-10-06 (5ddac27): Merge pull request #367 from hrach/f-database-tests
+2011-10-06 (8947a6a): $_POST["action"] při ajaxovém požadavku přepisuje základní action proměnnou získanou z routy. Více na http://forum.nette.org/cs/8336-promenna-post-action-a-jine-chovani-pod-ajax-modem
+2011-10-06 (fb4572c): Database: test rewrote to Assert
+2011-10-06 (e6174d4): Database: added tests
+2011-10-06 (d9ae5f6): Merge pull request #374 from MartyIX/nette-forms-php53-callback
+2011-10-05 (5ef52bb): Fix for fully specified class names in PHP 5.3 that are not properly translated to name of JS validation function.
+2011-10-04 (a072205): Merge pull request #358 from Majkl578/f-respect-invalidlinkmode
+2011-10-04 (e5b4ab6): Merge pull request #364 from juzna/feature-strictMode
+2011-10-04 (5cf0d2e): Merge pull request #371 from Foowie/master
+2011-10-04 (22c19f9): typos
+2011-10-04 (f02a6d2): Merge pull request #372 from smasty/feature-strings-substring
+2011-10-04 (4c4e3a2): Merge pull request #356 from hrach/h-presenter-params
+2011-10-04 (55cae51): Merge pull request #348 from Majkl578/f-component-serialization
+2011-10-04 (2e15ba2): Debugger Bar: fix output buffer when broken while printing debug bar
+2011-10-04 (a6d8e29): Route, SimpleRouter: added getFlags()
+2011-10-04 (6987015): Route: filter table is really filtering (BC break!)
+2011-10-04 (e890320): Image: added @method for magic GD methods
+2011-10-04 (2583eb5): Nette\Utils\Strings::substring - UTF-8 substr
+2011-10-04 (08c8acf): Latte: Macro {form} works with GET forms.
+2011-10-04 (1c782f4): Forms: fixed setMethod throwing exception whether empty form is anchored [Closes #236]
+2011-10-04 (126bb1d): PresenterComponentReflection: recursion fix
+2011-10-04 (84564bb): Added phpdoc for setOption
+2011-10-04 (5060070): added DefaultHelpers::strip() test
+2011-10-04 (1960fe0): Merge pull request #332 from Dundee/dm-email-address-validation
+2011-10-04 (48eb396): Merge pull request #338 from janmarek/master
+2011-10-04 (6670ccd): Merge pull request #366 from hrach/h-database-bugfixes
+2011-09-30 (e08c907): typos
+2011-09-17 (937c747): Database: fixed bug in joining by multi.table.notation
+2011-09-17 (0cfbd7e): Database: fixed bug in subselect
+2011-09-13 (07a7493): Debugger::$strictMode can determine severity of strictness
+2011-09-11 (8b9c170): Calling where() with only one parameter - e.g. where('full condition'), behaves differently from calling it with array('full condition'). This patch resolves it.
+2011-09-06 (dfd9c0c): Presenter::$invalidLinkMode is not overriden when application is created
+2011-09-04 (94e676c): Presenter: fixed bug - query param starting with "-" causes server error
+2011-08-25 (e095e35): Throw NotImplementedException in Component::__sleep() and make __wakeup message more verbosive
+2011-08-24 (f38d86f): Merge pull request #346 from Vrtak-CZ/typos
+2011-08-24 (2787500): added Cache::wrap()
+2011-08-23 (0b43c2f): typos
+2011-08-13 (eee17d5): Mail\Message::buildText() avoids double spaces
+2011-08-09 (17b33ac): Nette\Utils\Strings::contains
+2011-08-08 (ffc773d): Debugger bluescreen: used phpinfo(), CSS fix
+2011-08-08 (99386e4): NeonAdapter: fixed loading of empty file [Closes #335]
+2011-08-08 (a686d2b): FileUpload: changed default permissions for files to 0666 and for directories to 0777
+2011-08-04 (fd2c678): Revert "Database: free memory in destructor (ported from NotORM)", see http://forum.nette.org/cs/7862
+2011-08-04 (6889b94): SendmailMailer: fixed adding 5th parameter $commandArgs
+2011-08-04 (2721ed2): Strings: fixed match() and matchAll() compatibility with PHP 5.3.6
+2011-08-03 (34cd5fb): Debugger bluescreen: typos
+2011-08-03 (3b2ac59): Debugger bluescreen: added Configuration options
+2011-08-03 (4a327f1): Mail\MimePart: email address must not contain dash at the beginning
+2011-07-26 (0d96e13): Merge pull request #329 from Majkl578/f-54-magic-quotes
+2011-07-26 (5f092ee): Fixed compatibility with PHP 5.4 (get_magic_quotes_gpc now raises E_DEPRECATED)
+2011-07-15 (a59f0a2): Merge pull request #313 from hrach/h-presenter-property
+2011-07-15 (73c4717): removed some phpDoc properties, fixed commit 469214f
+2011-07-13 (bf2f6c0): Debugger: less chatty fatal error in production mode
+2011-07-13 (e22aaaf): Session: session.auto_start may be enabled if the safety requirements are met
+2011-07-13 (9ec3ff4): typo
+2011-07-11 (049441b): Merge pull request #319 from Michal-Mikolas/master
+2011-07-11 (3beb350): fixed RecursiveDirectoryIterator bug
+2011-07-05 (6d4bbfc): Presenter: fixed phpdoc properties
+2011-07-04 (b5af253): typos
+2011-07-02 (d2c39f5): Configurator: improved compile-time expanding
+2011-07-02 (2770f8d): IniAdapter, NeonAdapter: section inheriting maintains order
+2011-07-02 (fe03c5a): Strings: expand() accepts only strings
+2011-07-01 (4dab9cb): simplify exception tests
+2011-07-01 (6319e8e): fix tests
+2011-07-01 (18b1a27): Forms: fixed form validation when validationScope is false
+2011-07-01 (6e20adb): Forms: workaround for missing buttons in IE moved from server-side to HTML <!--[if IE]><input disabled style="display:none"><![endif]-->
+2011-07-01 (15b2ff7): Configurator: better variable expansion
+2011-07-01 (5464a41): Strings: added expand() (from DI\Container)
+2011-07-01 (2726236): typos
+2011-07-01 (1955827): DI\ContainerBuilder: fixed regexp in argsExport() [Closes #307]
+2011-07-01 (d97e7d4): Configurator: added service 'container'
+2011-07-01 (cc8517b): Configurator: fixed error message for 'mode'
+2011-07-01 (d0dffce): SendmailMailer: added property $commandArgs
+2011-07-01 (2d6e8ad): Database: fixed commit c72e74e7 (performance)
+2011-07-01 (b2c2f4d): Database: fixed commit fb52da4b4
+2011-06-30 (926e7fd): ConnectionPanel: removed callback() due to incompatibility with PHP 5.2
+2011-06-30 (00aec18): FileStorage: clean() deletes items with sliding expiration
+2011-06-30 (87f3ea7): ArrayHash is stdClass descendant
+2011-06-30 (6ef4316): Configurator: $params is not ArrayHash (possible BC break!)
+2011-06-30 (b3b5479): DI\Container::expand rewritten
+2011-06-30 (ce8d898): DI\ContainerBuilder: fixed expansion of empty strings
+2011-06-30 (ab9b5ee): Mail\Message: limit lines to 990 characters
+2011-06-30 (1b10a6e): typos
+2011-06-29 (ec35fd2): added FileUpload::getSanizitedName()
+2011-06-27 (1aae612): Configurator: typos in expand()
+2011-06-27 (e7a4cf6): tests: TestHelpers::purge(TEMP_DIR) moved to bootstrap.php

@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.3.0" />
+
+	<title>Class Nette\Application\Request | Nette Framework 2.0beta2 API</title>
+
+	<script type="text/javascript" src="resources/combined.js?3422936598"></script>
+	<script type="text/javascript" src="elementlist.js?3110932891"></script>
+	<script type="text/javascript">
+		var ApiGen = ApiGen || {};
+		ApiGen.options = {"elementDetailsCollapsed":true,"elementsOrder":"natural"};
+	</script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2080973025" />
+	<link rel="search" type="application/opensearchdescription+xml" title="Nette Framework 2.0beta2 API" href="http://api.nette.org/2.0/opensearch.xml" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<div id="groups">
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Nette.html">Nette</a>
+						<span></span>
+						<ul>
+				<li class="active"><a href="namespace-Nette.Application.html">Application</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Application.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Config.html">Config</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Config.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Database.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.html">DI</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.DI.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.html">Forms</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Latte.Macros.html">Macros</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Security.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-Nette.Utils.PhpGenerator.html">PhpGenerator</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="Nette.Application.Application.html">Application</a></li>
+				<li><a href="Nette.Application.PresenterFactory.html">PresenterFactory</a></li>
+				<li class="active"><a href="Nette.Application.Request.html">Request</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="Nette.Application.IPresenter.html">IPresenter</a></li>
+				<li><a href="Nette.Application.IPresenterFactory.html">IPresenterFactory</a></li>
+				<li><a href="Nette.Application.IResponse.html">IResponse</a></li>
+				<li><a href="Nette.Application.IRouter.html">IRouter</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="Nette.Application.AbortException.html">AbortException</a></li>
+				<li><a href="Nette.Application.ApplicationException.html">ApplicationException</a></li>
+				<li><a href="Nette.Application.BadRequestException.html">BadRequestException</a></li>
+				<li><a href="Nette.Application.ForbiddenRequestException.html">ForbiddenRequestException</a></li>
+				<li><a href="Nette.Application.InvalidPresenterException.html">InvalidPresenterException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form action="http://www.google.com/cse" id="search">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="hidden" name="more" value="api" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Nette.Application.html" title="Summary of Nette\Application"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Request</h1>
+
+	<div class="description">
+	
+<p>Presenter request. Immutable object.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="Nette.Object.html">Nette\Object</a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="Nette.FreezableObject.html">Nette\FreezableObject</a>
+			
+			 implements 
+				<a href="Nette.IFreezable.html">Nette\IFreezable</a>
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b>Nette\Application\Request</b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+	<div class="info">
+		<b>Final</b><br />
+		
+		<b>Namespace:</b> <a href="namespace-Nette.html">Nette</a>\<a href="namespace-Nette.Application.html">Application</a><br />
+
+				<b>Author:</b>
+				David Grudl<br />
+		<b>Located at</b> <a href="source-Application.Request.php.html#18" title="Go to source code">Application/Request.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-Application.Request.php.html#60" title="Go to source code">__construct</a>( <span>string <var>$name</var></span>, <span>string <var>$method</var></span>, <span>array <var>$params</var></span>, <span>array <var>$post</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$files</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$flags</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>fully qualified presenter name (module:module:presenter)</dd>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code><br>method</dd>
+					<dt><var>$params</var></dt>
+					<dd><code>array</code><br>variables provided to the presenter usually via URL</dd>
+					<dt><var>$post</var></dt>
+					<dd><code>array</code><br>variables provided to the presenter via POST</dd>
+					<dt><var>$files</var></dt>
+					<dd><code>array</code><br>all uploaded files</dd>
+					<dt><var>$flags</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPresenterName" id="_setPresenterName">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="Nette.Application.Request.html">Nette\Application\Request</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPresenterName">#</a>
+		<code><a href="source-Application.Request.php.html#79" title="Go to source code">setPresenterName</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the presenter name.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the presenter name.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.Application.Request.html">Nette\Application\Request</a></code></code><br>provides a fluent interface<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPresenterName" id="_getPresenterName">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPresenterName">#</a>
+		<code><a href="source-Application.Request.php.html#93" title="Go to source code">getPresenterName</a>( )</code>
+
+		<div class="description short">
+			
+<p>Retrieve the presenter name.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieve the presenter name.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setParameters" id="_setParameters">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="Nette.Application.Request.html">Nette\Application\Request</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setParameters">#</a>
+		<code><a href="source-Application.Request.php.html#104" title="Go to source code">setParameters</a>( <span>array <var>$params</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets variables provided to the presenter.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets variables provided to the presenter.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$params</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.Application.Request.html">Nette\Application\Request</a></code></code><br>provides a fluent interface<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getParameters" id="_getParameters">
+
+		<td class="attributes"><code>
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getParameters">#</a>
+		<code><a href="source-Application.Request.php.html#118" title="Go to source code">getParameters</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns all variables provided to the presenter (usually via URL).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns all variables provided to the presenter (usually via URL).</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPost" id="_setPost">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="Nette.Application.Request.html">Nette\Application\Request</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPost">#</a>
+		<code><a href="source-Application.Request.php.html#147" title="Go to source code">setPost</a>( <span>array <var>$params</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets variables provided to the presenter via POST.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets variables provided to the presenter via POST.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$params</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.Application.Request.html">Nette\Application\Request</a></code></code><br>provides a fluent interface<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPost" id="_getPost">
+
+		<td class="attributes"><code>
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPost">#</a>
+		<code><a href="source-Application.Request.php.html#161" title="Go to source code">getPost</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns all variables provided to the presenter via POST.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns all variables provided to the presenter via POST.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setFiles" id="_setFiles">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="Nette.Application.Request.html">Nette\Application\Request</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setFiles">#</a>
+		<code><a href="source-Application.Request.php.html#172" title="Go to source code">setFiles</a>( <span>array <var>$files</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets all uploaded files.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets all uploaded files.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$files</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.Application.Request.html">Nette\Application\Request</a></code></code><br>provides a fluent interface<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFiles" id="_getFiles">
+
+		<td class="attributes"><code>
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFiles">#</a>
+		<code><a href="source-Application.Request.php.html#186" title="Go to source code">getFiles</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns all uploaded files.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns all uploaded files.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setMethod" id="_setMethod">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="Nette.Application.Request.html">Nette\Application\Request</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setMethod">#</a>
+		<code><a href="source-Application.Request.php.html#197" title="Go to source code">setMethod</a>( <span>string <var>$method</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the method.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the method.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.Application.Request.html">Nette\Application\Request</a></code></code><br>provides a fluent interface<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMethod" id="_getMethod">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMethod">#</a>
+		<code><a href="source-Application.Request.php.html#210" title="Go to source code">getMethod</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the method.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the method.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isMethod" id="_isMethod">
+
+		<td class="attributes"><code>
+			
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isMethod">#</a>
+		<code><a href="source-Application.Request.php.html#221" title="Go to source code">isMethod</a>( <span>string <var>$method</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Checks if the method is the given one.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks if the method is the given one.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isPost" id="_isPost">
+
+		<td class="attributes"><code>
+			
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isPost">#</a>
+		<code><a href="source-Application.Request.php.html#233" title="Go to source code">isPost</a>( )</code>
+
+		<div class="description short">
+			
+<p>Checks if the method is POST.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks if the method is POST.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setFlag" id="_setFlag">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="Nette.Application.Request.html">Nette\Application\Request</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setFlag">#</a>
+		<code><a href="source-Application.Request.php.html#244" title="Go to source code">setFlag</a>( <span>string <var>$flag</var></span>, <span>boolean <var>$value</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the flag.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the flag.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$flag</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>boolean</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.Application.Request.html">Nette\Application\Request</a></code></code><br>provides a fluent interface<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasFlag" id="_hasFlag">
+
+		<td class="attributes"><code>
+			
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasFlag">#</a>
+		<code><a href="source-Application.Request.php.html#259" title="Go to source code">hasFlag</a>( <span>string <var>$flag</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Checks the flag.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks the flag.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$flag</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="Nette.FreezableObject.html#methods">Nette\FreezableObject</a></caption>
+	<tr>
+		<td><code>
+<a href="Nette.FreezableObject.html#___clone">__clone()</a>, 
+<a href="Nette.FreezableObject.html#_freeze">freeze()</a>, 
+<a href="Nette.FreezableObject.html#_isFrozen">isFrozen()</a>, 
+<a href="Nette.FreezableObject.html#_updating">updating()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="Nette.Object.html#methods">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+<a href="Nette.Object.html#___call">__call()</a>, 
+<a href="Nette.Object.html#___callStatic">__callStatic()</a>, 
+<a href="Nette.Object.html#___get">__get()</a>, 
+<a href="Nette.Object.html#___isset">__isset()</a>, 
+<a href="Nette.Object.html#___set">__set()</a>, 
+<a href="Nette.Object.html#___unset">__unset()</a>, 
+<a href="Nette.Object.html#_extensionMethod">extensionMethod()</a>, 
+<a href="Nette.Object.html#_getReflection">getReflection()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="FORWARD" id="FORWARD">
+
+		<td class="attributes"><code>
+			
+			string
+		</code></td>
+		<td class="name"><code>
+				<a href="source-Application.Request.php.html#31" title="Go to source code"><b>FORWARD</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'FORWARD'</span></code></td>
+		<td class="description"><div>
+			<a href="#FORWARD" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>method</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>method</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SECURED" id="SECURED">
+
+		<td class="attributes"><code>
+			
+			string
+		</code></td>
+		<td class="name"><code>
+				<a href="source-Application.Request.php.html#34" title="Go to source code"><b>SECURED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'secured'</span></code></td>
+		<td class="description"><div>
+			<a href="#SECURED" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>flag</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>flag</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="RESTORED" id="RESTORED">
+
+		<td class="attributes"><code>
+			
+			string
+		</code></td>
+		<td class="name"><code>
+				<a href="source-Application.Request.php.html#37" title="Go to source code"><b>RESTORED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'restored'</span></code></td>
+		<td class="description"><div>
+			<a href="#RESTORED" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>flag</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>flag</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework 2.0beta2 API API documentation generated by <a href="http://apigen.org">ApiGen 2.3.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
