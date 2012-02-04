@@ -27,7 +27,23 @@
 	<script type="text/javascript" src="{$basePath}/js/netteForms.js"></script>
 	{block head}{/block}
 </head>
-
+<style>
+    .selected_star, .unselected_star  {
+        text-decoration: none;
+        width: 19px;
+        height: 19px;
+        display: inline-block;
+        padding: 0;
+        margin: 0; 
+    }
+    
+    .selected_star {
+        background-image: url("/images/selected_star.png");
+    }
+    .unselected_star {
+        background-image: url("/images/unselected_star.png");
+    }
+</style>
 <body>
 	<script> document.body.className+=' js' </script>
 

@@ -1,20 +1,2 @@
-{* This is the welcome page, you can delete it *}
 {block content}
-{snippet ahoj}{/snippet}
-{*<a n:href=search:ahoj! >Hledej</a>*} 
-{control search}
-<a n:href="Homepage:Signin">Zaregistrovat</a><br/>
-{snippet show}{$results}{/snippet}
-{foreach $records as $record}
-  {$record["name"]}<br />
-  {$record["description"]}<br />
-
-  {foreach $record->record_comments() as $comment}
-      {$comment["creation_time"]} - {$comment->user["email"]}<br />
-      {$comment["content"]}<br/>
-  {/foreach}
-{/foreach}
-{/block}
-
-{block head}
 {/block}
