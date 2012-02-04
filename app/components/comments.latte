@@ -1,0 +1,16 @@
+{foreach $flashes as $flash}
+    <div class="flash {$flash->type}">{$flash->message}</div>
+{/foreach}
+{foreach $comments as $comment}
+<div>
+    Komentar uzivatele {$comment->users->email}
+    <div>{$comment->content}</div>
+    <div>
+        {$comment->rank} Hodnoceni
+        <a n:href="agree! $comment['id']">Souhlasim</a>
+        <a n:href="disagree! $comment['id']">Nesouhlasim</a>
+    </div>
+    {control commentRating-$comment->id, $comment->rating}
+</div>    
+{/foreach}
+{control addCommentForm}
