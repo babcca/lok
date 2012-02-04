@@ -14,11 +14,12 @@ require LIBS_DIR . '/Nette/loader.php';
 // Enable Nette Debugger for error visualisation & logging
 Debugger::$logDirectory = __DIR__ . '/../log';
 Debugger::$strictMode = TRUE;
-Debugger::enable();
+Debugger::enable(Debugger::DEVELOPMENT);
 
 
 // Configure application
 $configurator = new Nette\Config\Configurator;
+$configurator->setProductionMode(false);
 $configurator->setTempDirectory(__DIR__ . '/../temp');
 
 // Enable RobotLoader - this will load all classes automatically

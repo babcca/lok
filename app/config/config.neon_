@@ -1,0 +1,55 @@
+#
+# SECURITY WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+#
+# If you don't protect this directory from direct web access, anybody will be able to see your passwords.
+# http://nette.org/security-warning
+#
+common:
+  parameters:
+    database:
+      driver: mysql
+      host: localhost
+      dbname: dev_lokola
+      user: petr
+      password: babicka
+  
+      #(
+      #  '%database.driver%:host=%database.host%;dbname=%database.database%'
+      #  %database.username%
+      #  %database.password%
+      #)
+      
+#    authenticator: Authenticator( @dbConnection::table(users) )
+        
+#  parameters:
+#    default:
+#      dsn: '%database.driver%:host=%database.host%;dbname=%database.dbname%'
+#      user: %database.user%
+#      password: %database.password%
+#      profiler: true
+
+  php:
+    date.timezone: Europe/Prague
+    # session.save_path: "%tempDir%/sessions"
+    # zlib.output_compression: yes
+
+
+  nette:
+    database:
+      default:
+        dsn: '%database.driver%:host=%database.host%;dbname=%database.dbname%'
+        user: %database.user%
+        password: %database.password%
+  services:
+    # Classic Nette Database connection
+    # Implements clasic NotORM
+    database:
+      class: @Nette\Database\Connection
+      setup: 
+        - setCacheStorage(...)
+    model:
+      Model(@database)
+  factories:
+
+production < common:
+development < common:

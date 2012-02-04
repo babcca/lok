@@ -1,9 +1,0 @@
-parameters:
-	bar: hello
-
-
-database:
-	foo: %bar%
-
-	services:
-		foo: stdClass

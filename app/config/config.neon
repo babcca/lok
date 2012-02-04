@@ -5,46 +5,38 @@
 # http://nette.org/security-warning
 #
 common:
-  services:
-    modelLoader:
-      class: Diggriola\ModelLoader
-      arguments: ['@dbConnection']
-
-    dbConnection:
-      factory: Diggriola\ModelLoader::dbConnect  
-
-  parameters:
-    database:
-      driver: mysql
-      host: localhost
-      database: dev_lokola
-      username: petr
-      password: babicka
-      profiler: true
-
-#    authenticator: Authenticator( @dbConnection::table(users) )
-        
-#  parameters:
-#    default:
-#      dsn: '%database.driver%:host=%database.host%;dbname=%database.dbname%'
-#      user: %database.user%
-#      password: %database.password%
-#      profiler: true
-
-  php:
-    date.timezone: Europe/Prague
-    # session.save_path: "%tempDir%/sessions"
-    # zlib.output_compression: yes
+	parameters:
+		database:
+			driver: mysql
+			host: localhost
+			dbname: dev_lokola
+			user: petr
+			password: babicka
 
 
-#  nette:
-#    database:
-#      default:
-#        dsn: '%database.driver%:host=%database.host%;dbname=%database.dbname%'
-#        user: %database.user%
-#        password: %database.password%
-  
-#  factories:
+	php:
+		date.timezone: Europe/Prague
+		# session.save_path: "%tempDir%/sessions"
+		# zlib.output_compression: yes
+
+
+	nette:
+		database:
+			default:
+				dsn: '%database.driver%:host=%database.host%;dbname=%database.dbname%'
+				user: %database.user%
+				password: %database.password%
+
+
+	services:
+		database: @Nette\Database\Connection
+
+		authenticator: Authenticator( @database::table(users) )
+		model: Model(@database)
+
+	factories:
+
 
 production < common:
+
 development < common:
